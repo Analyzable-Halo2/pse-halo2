@@ -548,9 +548,11 @@ pub struct InstanceQuery {
     /// Query index
     pub(crate) index: Option<usize>,
     /// Column index
-    pub(crate) column_index: usize,
+    /// Visibility changed for analyzer
+    pub column_index: usize,
     /// Rotation of this query
-    pub(crate) rotation: Rotation,
+    /// Visibility changed for analyzer
+    pub rotation: Rotation,
 }
 
 impl InstanceQuery {
